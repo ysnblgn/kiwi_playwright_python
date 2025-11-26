@@ -5,6 +5,13 @@ from pages.home_page import HomePage
 
 pytest_plugins = "steps.basic_search_steps"
 
+def pytest_addoption(parser):
+    parser.addoption(
+        "--headless",
+        action="store_true",
+        default=False,
+        help="Run browser in headless mode"
+    )
 
 @pytest.fixture
 def home(page) -> HomePage:
@@ -13,10 +20,10 @@ def home(page) -> HomePage:
 
 @pytest.fixture(scope="session")
 def browser(request):
-    env_config = request.config.getoption("--environment", default="local")
+    is_headless = request.config.getoption("--headless")
 
     with sync_playwright() as p:
-        if os.getenv("DOCKER_RUN"):
+        if os.getenv("DOCKER_RUN") or is_headless:
             browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
         else:
             browser = p.chromium.launch(headless=False)
