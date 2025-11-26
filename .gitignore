@@ -1,0 +1,31 @@
+# Python
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Reports
+test-results/
+playwright-report/
+reports/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.log
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db

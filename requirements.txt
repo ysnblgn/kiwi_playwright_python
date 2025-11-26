@@ -1,0 +1,4 @@
+pytest
+pytest-bdd
+playwright==1.55.0
+pytest-playwright
