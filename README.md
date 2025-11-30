@@ -20,61 +20,17 @@ The primary goal of this project is to build a scalable and maintainable test au
 
 ## ✨ Technologies and Architecture
 
-Area
+| Area                  | Technology / Principle       | Description                                                              |
+| --------------------- | ---------------------------- | ------------------------------------------------------------------------ |
+| **Programming Language**  | Python 3.11+                 | The core language for test script development.                           |
+| **Test Framework**        | Pytest                       | A powerful framework for organizing, running, and reporting on tests.    |
+| **UI Automation Tool**    | Playwright                   | For modern, fast, and reliable browser automation and interaction.       |
+| **BDD Framework**         | Pytest-BDD                   | Enables writing tests in Gherkin syntax (`.feature` files).              |
+| **Architecture**          | Page Object Model (POM)      | Encapsulates page-specific locators and methods for reusability.         |
+| **Containerization**      | Docker                       | Ensures a consistent and isolated environment for running tests.         |
+| **CI/CD Integration**     | GitHub Actions               | Automates test execution on code changes and allows for manual runs.     |
+| **Dependency Management** | pip / `requirements.txt`     | Manages all required Python packages.                                    |
 
-Technology / Principle
-
-Description
-
-**Programming Language**
-
-Python 3.11+
-
-The core language for test script development.
-
-**Test Framework**
-
-Pytest
-
-A powerful framework for organizing, running, and reporting on tests.
-
-**UI Automation Tool**
-
-Playwright
-
-For modern, fast, and reliable browser automation and interaction.
-
-**BDD Framework**
-
-Pytest-BDD
-
-Enables writing tests in Gherkin syntax (`.feature` files).
-
-**Architecture**
-
-Page Object Model (POM)
-
-Encapsulates page-specific locators and methods for reusability.
-
-**Containerization**
-
-Docker
-
-Ensures a consistent and isolated environment for running tests.
-
-**CI/CD Integration**
-
-GitHub Actions
-
-Automates test execution on code changes and allows for manual runs.
-
-**Dependency Management**
-
-pip / `requirements.txt`
-
-Manages all required Python packages.
-
----
 
 ---
 
